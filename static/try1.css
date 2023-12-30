@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: hsl(0, 0%, 16%);
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: hsl(0, 2%, 8%);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  font-family: "Sen", sans-serif;
+  font-size: 30px;
+  color: rgb(249, 245, 245);
+  cursor: pointer;
+}
+
+.menu-containers {
+  flex: 6;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-list {
+  color: rgb(209, 209, 209);
+  display: flex;
+  list-style: none;
+}
+
+.menu-list-item {
+  margin-top: 2mm;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.search-container {
+  width: 20cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1cm auto 0;
+}
+
+input[type="text"] {
+  height: 10cm;
+  width: 20cm;
+  border: none;
+  border-radius: 2%;
+  background-color: hsl(0, 0%, 10%);
+  padding: 0.5cm;
+  color: white;
+  bottom: -10px;
+  right: 10px;
+  text-align: right;
+}
+
+input[type="text"] {
+  position: relative;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1cm;
+}
+
+.secondary-button {
+  font-size: large;
+  width: 6cm;
+  height: 1.5cm;
+  background-color: hsl(0, 0%, 62%);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.quote {
+  justify-content: center;
+  text-align: center;
+  color: azure;
+  margin-top: 0.5cm;
+}
+
+/* footer */
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; /* adjust as needed */
+}
+
+.footer-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list-item {
+  text-align: center;
+  margin-right: 20px;
+  font-size: 14px;
+  margin-bottom: 0.5cm;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.footer-list-item.active {
+  text-align: center;
+  color: hsl(0, 0%, 48%);
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust navbar styles for smaller screens */
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .menu-list-item {
+    margin-right: 1rem;
+  }
+
+  /* Adjust search input styles for smaller screens */
+  .search-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  input[type="text"] {
+    height: 8cm;
+    width: 100%;
+  }
+
+  /* Adjust button styles for smaller screens */
+  .button-container {
+    margin-top: 0.5cm;
+  }
+
+  .secondary-button {
+    width: 6cm;
+    height: 1.5cm;
+  }
+
+  /* Adjust footer styles for smaller screens */
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

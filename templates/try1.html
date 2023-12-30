@@ -1,0 +1,42 @@
+{% extends 'nav.html' %} {% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'try1.css' %}">
+</head>
+<body>
+    <BR></br><BR></br><BR></br>
+
+    <div class="search-container">
+      <form method="post" action="{% url 'predict_article' %}">
+        {% csrf_token %}
+        <input type="text" name="article" id="article" placeholder="Write...">
+        
+        <!-- <button type="submit">Search</button> -->
+      </div>
+      <div class="button-container">
+        <button class="secondary-button" value="Submit"  type:"submit">Resolve Your Query</button>
+    </form>
+
+      </div>
+    <p class="quote">“Disinformation is the brainchild of a self-absorbed behavior.”</p>
+    <div class="footer-container">
+        <ul class="footer-list">
+            <li class="footer-list-item active">Privacy and Cookies</li>
+            <li class="footer-list-item active">Legal</li>
+            <li class="footer-list-item active">Advertise</li>
+            <li class="footer-list-item active">Help/Feedback</li>
+        </ul>
+
+        </div>
+    </div>
+</body>
+
+</html>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'nav.html' %} {% load static %}{% block content %}
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'try1.css' %}" />
+  <style>
+    h1 {
+      color: white;
+    }
+
+    h3 {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <br /><br />
+    <br /><br />
+    <br /><br />
+  </div>
+  <div class="search-container">
+    <h6><a href="#"> {{article}} </a></h6>
+  </div>
+  {% endblock %}
+</body>

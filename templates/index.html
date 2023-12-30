@@ -1,0 +1,151 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  {% comment %} <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> {% endcomment %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossOrigin="anonymous" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+ {% comment %} <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> {% endcomment %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src="{% static 'main.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+<title>HackStormers</title>
+</head>
+<body onload="autoType()">
+
+  <nav class="navcontainer">
+    <div class="custom-nav">
+        <lottie-player src="{% static '/lotties/email.json' %}"  background="transparent"  speed="1"  style="width: 100px; height: 80px;"  loop  autoplay></lottie-player>
+      <a href="">
+      <h2 style="color:white;">
+        News Guardians
+    </h2>
+         
+        
+            <a href="index"><button class="button-9" href="index">
+            Home
+            </button>
+          </a>
+            
+            <a href="neutralizer"><button class="button-9">
+            Neutralizer
+          </button></a>
+          <a href="try1">
+          <button class="button-9">
+            Try Guardian's News
+          </button><a>
+            <a href="support">
+                <button class="button-9">
+            Support
+          </button></a>
+    
+
+<div class="maindiv" style=" width:100% ; height: 110vh; display:flex;">
+    <div main->
+    <h1 style="
+    height:100vh;
+    font-size: 3rem;
+    width: 0%;
+    margin-left: 5%;
+    color: rgb(249, 238, 238);
+    margin-top: 20%;
+    cursor: pointer;
+    display: inline-block;
+    z-index=10000;
+    opacity: 0.8;">
+      1930 
+      <strong>
+        Helpline improvement
+      </strong>
+    </h1>
+  </div>
+  <div><lottie-player src="{% static '/lotties/news-global.json' %}"  background="transparent"  speed="1"  
+    style="
+    height:100vh;
+    display:flex;
+    " loop  autoplay></lottie-player>
+        </div>
+        <h1 style="
+        display:flex; 
+        font-size: 2rem;
+        height: 100%;
+        width: 50%;
+        margin-right: 5%;
+        color: rgb(249, 238, 238);
+        margin-top: 10%;
+        cursor: pointer;
+        display: inline-flex;
+        opacity: 0.8;" id="auto-typing" ></h1> 
+      </div>
+          <button class="button-34"
+            style=" zIndex: "2000", display: "flex", alignItems: "center" ">
+           Phagwara 25° C
+        </button>
+      </div>
+      <div class="blogContainer">
+        <h3 class="caseStudyContentText">
+          AI & Simplicity is the Solution
+        </h3 style={fontSize:5rem}>
+        <lottie-player src="{% static '/lotties/mapofspread.json' %}"  background="solid"  speed="1" loop  autoplay></lottie-player> 
+        
+      </div>
+      <div class="caseStudyContainer">
+        <div class="caseStudyContentContainer">
+          <img
+            class="caseStudytLeftImage"
+            src={% static '/pp1.png' %}
+            alt=""
+            height="52px"
+            width="2px"
+          />
+          <div
+            class="caseStudyContentText"
+            style=" padding: "2%", display: "block" "
+          >
+            <h2 style=" marginBottom: "2%", fontSize: "3rem" ">
+              Idea/Solution Behind Our Prototype
+            </h2>
+            <h5>
+              The proposed solution is an improvement in the web-based platform that integrates the 1930
+Helpline with an AI-powered Query Resolution and Tracking System which continuously improve its
+performance through continuous feedback and improvement system with a data analysis model to
+predict and analyze cases . The system aims to provide a seamless and user-friendly experience for
+complainants to report cyber fraud cases, freeze funds, and recover them in a timely manner. The
+platform also aims to provide legal guidance and fraud prevention tips to the users, as well as
+insights and recommendations to the helpline operators and authorities.<br />
+              <br /><br />
+            </h5>
+          </div>
+        </br></br>
+        </div>
+        <footer>
+          <p>&copy; 2023 HackStormers. All rights reserved.</p>
+        </footer>
+      </div>
+    </body>  
+
+</html>
